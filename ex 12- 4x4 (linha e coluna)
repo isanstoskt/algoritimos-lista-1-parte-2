@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int mat[4][4], max, row, col;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+    max = mat[0][0];
+    row = col = 0;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (mat[i][j] > max) {
+                max = mat[i][j
