@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int vec[8], x, y, sum;
+    for (int i = 0; i < 8; i++) {
+        scanf("%d", &vec[i]);
+    }
+    scanf("%d %d", &x, &y);
+    if (x >= 0 && x < 8 && y >= 0 && y < 8) {
+        sum = vec[x] + vec[y];
+        printf("Sum: %d\n", sum);
+    } else {
+        printf("posições inválidas\n");
+    }
+    return 0;
+}
