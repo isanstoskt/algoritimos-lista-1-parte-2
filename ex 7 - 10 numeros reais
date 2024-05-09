@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float vec[10], soma_posiçao = 0, contagem_neg = 0;
+    for (int i = 0; i < 10; i++) {
+        scanf("%f", &vec[i]);
+        if (vec[i] < 0) {
+            contagem_neg++;
+        } else {
+            soma_posiçao += vec[i];
+        }
+    }
+    printf("numeros negativos: %d\n", contagem_neg);
+    printf("soma de numeros positivos: %.2f\n", soma_posiçao);
+    return 0;
+}
